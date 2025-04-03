@@ -22,7 +22,7 @@ export default function Home() {
       <section className="relative pb-16">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 relative z-10">
-            <Image src="/almie-character.svg" alt="Almie character" width={300} height={300} className="mx-auto" />
+            <Image src="/almie-hero.svg" alt="Almie character" width={300} height={300} className="mx-auto" />
           </div>
           <div className="md:w-1/2 z-10">
             <div className="bg-white p-8 rounded-3xl max-w-md">
@@ -34,7 +34,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 z-0">
+        <div className="absolute -bottom-2 left-0 right-0 z-0">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full">
             <path
               fill="#ffffff"
@@ -49,83 +49,53 @@ export default function Home() {
       <section className="bg-white pt-16 pb-32 relative">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 mb-8 md:mb-0 z-10">
+            <div className="md:w-1/2 mb-8 md:mb-0 z-10 pl-4">
               <h2 className="text-4xl font-bold mb-8 text-blue-500">Divertido, facil y seguro</h2>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <div className="bg-gray-200 p-2 rounded-md mr-4">
-                    <Image src="/placeholder.svg?height=24&width=24" alt="Diary" width={24} height={24} />
+                  <div className="bg-transparent  p-2 rounded-md mr-4">
+                    <Image className="filter invert-[25%] sepia-[0%] saturate-[0%] hue-rotate-[0deg] brightness-[96%] contrast-[86%]" src="/niños/diario.svg" alt="Diary" width={24} height={24} />
                   </div>
-                  <p>Tienes un diario para registrar sus emociones.</p>
+                  <p className="text-neutral-700">Tienes un diario para registrar sus emociones.</p>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-gray-200 p-2 rounded-md mr-4">
-                    <Image src="/placeholder.svg?height=24&width=24" alt="Chat" width={24} height={24} />
+                  <div className="bg-transparent p-2 rounded-md mr-4">
+                    <Image className="filter invert-[25%] sepia-[0%] saturate-[0%] hue-rotate-[0deg] brightness-[96%] contrast-[86%]" src="/niños/chat.svg" alt="Chat" width={24} height={24} />
                   </div>
-                  <p>Chat personalizado con Almie.</p>
+                  <p className="text-neutral-700">Chat personalizado con Almie.</p>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-gray-200 p-2 rounded-md mr-4">
-                    <Image src="/placeholder.svg?height=24&width=24" alt="Tasks" width={24} height={24} />
+                  <div className="bg-transparent  p-2 rounded-md mr-4">
+                    <Image className="filter invert-[25%] sepia-[0%] saturate-[0%] hue-rotate-[0deg] brightness-[96%] contrast-[86%]" src="/niños/calendario.svg" alt="Tasks" width={24} height={24} />
                   </div>
-                  <p>Organización de tareas y recordatorios divertidos.</p>
+                  <p className="text-neutral-700">Organización de tareas y recordatorios divertidos.</p>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-gray-200 p-2 rounded-md mr-4">
-                    <Image src="/placeholder.svg?height=24&width=24" alt="Personalize" width={24} height={24} />
+                  <div className="bg-transparent p-2 rounded-md mr-4">
+                    <Image className="filter invert-[25%] sepia-[0%] saturate-[0%] hue-rotate-[0deg] brightness-[96%] contrast-[86%]" src="/niños/editar.svg" alt="Personalize" width={24} height={24} />
                   </div>
-                  <p>Personaliza a Almie y hazlo mas cercano a ti.</p>
+                  <p className="text-neutral-700">Personaliza a Almie y hazlo mas cercano a ti.</p>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-gray-200 p-2 rounded-md mr-4">
-                    <Image src="/placeholder.svg?height=24&width=24" alt="Help" width={24} height={24} />
+                  <div className="bg-transparent  p-2 rounded-md mr-4">
+                    <Image className="filter invert-[25%] sepia-[0%] saturate-[0%] hue-rotate-[0deg] brightness-[96%] contrast-[86%]" src="/niños/sos.svg" alt="Help" width={24} height={24} />
                   </div>
-                  <p>Tenemos un boton de ayuda y denuncia cuando lo necesites.</p>
+                  <p className="text-neutral-700">Tenemos un boton de ayuda y denuncia cuando lo necesites.</p>
                 </div>
               </div>
             </div>
-            <div className="md:w-1/2">
-              <div className="bg-blue-500 rounded-lg p-4 inline-block mb-8">
-                <div className="flex space-x-4">
-                  <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-1">
-                      <span className="text-xl">😢</span>
-                    </div>
-                    <span className="text-xs text-white">Muy mal</span>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-1">
-                      <span className="text-xl">😕</span>
-                    </div>
-                    <span className="text-xs text-white">Mal</span>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-1">
-                      <span className="text-xl">😐</span>
-                    </div>
-                    <span className="text-xs text-white">Normal</span>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-1">
-                      <span className="text-xl">😊</span>
-                    </div>
-                    <span className="text-xs text-white">Bien</span>
-                  </div>
-                </div>
-              </div>
-              <div className="relative">
+              <div className="relative justify-self-end z-10 ">
                 <Image
-                  src="/almie-happy.svg"
+                  src="/almie-emociones.svg"
                   alt="Almie happy"
-                  width={300}
-                  height={300}
-                  className="absolute bottom-0 right-0"
+                  width={500}
+                  height={400}
+                  className="bottom-0 right-0"
                 />
               </div>
-            </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 z-0">
+        <div className="absolute -bottom-2 left-0 right-0 z-0">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full">
             <path
               fill="#a9d4fb"
@@ -140,12 +110,12 @@ export default function Home() {
       <section className="bg-[#a9d4fb] pt-16 pb-32 relative">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-8 md:mb-0">
-              <Image src="/almie-glasses.svg" alt="Almie with glasses" width={300} height={300} className="mx-auto" />
+            <div className="md:w-1/2 mb-8 md:mb-0 z-10">
+              <Image src="/almie-psicologo.svg" alt="Almie with glasses" width={300} height={300} className="mx-auto" />
             </div>
-            <div className="md:w-1/2">
-              <h2 className="text-4xl font-bold mb-6 text-white">Respaldado por psicologos</h2>
-              <p className="text-white">
+            <div className="md:w-1/2 z-10">
+              <h2 className="text-6xl font-bold mb-6 text-white">Respaldado por psicologos</h2>
+              <p className="text-neutral-700">
                 AlmalA ha sido desarrollado junto a un equipo de psicólogos y especialistas en bienestar infantil,
                 asegurando que cada herramienta y actividad esté basada en evidencia científica para el desarrollo
                 emocional de los estudiantes.
@@ -153,7 +123,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 z-0">
+        <div className="absolute -bottom-2 left-0 right-0 z-0">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full">
             <path
               fill="#ffffff"
@@ -169,40 +139,40 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0 z-10">
-              <h2 className="text-4xl font-bold mb-8 text-blue-500">Ayuda a los docentes</h2>
+              <h2 className="text-6xl font-bold mb-8 text-blue-500">Ayuda a los docentes</h2>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <div className="bg-gray-200 p-2 rounded-md mr-4">
-                    <Image src="/placeholder.svg?height=24&width=24" alt="Summary" width={24} height={24} />
+                  <div className="bg-transparent p-2 rounded-md mr-4">
+                    <Image className="filter invert-[25%] sepia-[0%] saturate-[0%] hue-rotate-[0deg] brightness-[96%] contrast-[86%]" src="/profesores/diario.svg" alt="Summary" width={24} height={24} />
                   </div>
-                  <p>Tendras resúmenes con el estado emocional de los estudiantes.</p>
+                  <p className="text-neutral-700">Tendras resúmenes con el estado emocional de los estudiantes.</p>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-gray-200 p-2 rounded-md mr-4">
-                    <Image src="/placeholder.svg?height=24&width=24" alt="Alerts" width={24} height={24} />
+                  <div className="bg-transparent p-2 rounded-md mr-4">
+                    <Image className="filter invert-[25%] sepia-[0%] saturate-[0%] hue-rotate-[0deg] brightness-[96%] contrast-[86%]" src="/profesores/alertas.svg" alt="Alerts" width={24} height={24} />
                   </div>
-                  <p>Alertas sobre cambios de comportamiento facilitando una intervención oportuna.</p>
+                  <p className="text-neutral-700">Alertas sobre cambios de comportamiento facilitando una intervención oportuna.</p>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-gray-200 p-2 rounded-md mr-4">
-                    <Image src="/placeholder.svg?height=24&width=24" alt="Graphs" width={24} height={24} />
+                  <div className="bg-transparent p-2 rounded-md mr-4">
+                    <Image className="filter invert-[25%] sepia-[0%] saturate-[0%] hue-rotate-[0deg] brightness-[96%] contrast-[86%]" src="/profesores/graficos.svg" alt="Graphs" width={24} height={24} />
                   </div>
-                  <p>Gráficos de evolución a lo largo del tiempo para detectar patrones.</p>
+                  <p className="text-neutral-700">Gráficos de evolución a lo largo del tiempo para detectar patrones.</p>
                 </div>
               </div>
             </div>
             <div className="md:w-1/2 z-10">
               <Image
-                src="/almie-megaphone.svg"
+                src="/almie-reportes.svg"
                 alt="Almie with megaphone"
-                width={300}
-                height={300}
+                width={400}
+                height={400}
                 className="mx-auto"
               />
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 z-0">
+        <div className="absolute -bottom-2 left-0 right-0 z-0">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full">
             <path
               fill="#a9d4fb"
@@ -214,22 +184,22 @@ export default function Home() {
       </section>
 
       {/* Parents Section */}
-      <section className="bg-[#a9d4fb] pt-16 pb-32 relative">
+      <section className="bg-[#a9d4fb] pb-32 relative">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center z-10">
-            <div className="md:w-1/2 mb-8 md:mb-0">
-              <Image src="/almie-family.svg" alt="Almie with family" width={300} height={300} className="mx-auto" />
+            <div className="md:w-1/2 mb-8 md:mb-0 z-10">
+              <Image src="/almie-padre.svg" alt="Almie with family" width={300} height={300} className="mx-auto" />
             </div>
-            <div className="md:w-1/2">
-              <h2 className="text-4xl font-bold mb-6 text-white">Conoce mejor a tu hijo</h2>
-              <p className="text-white">
+            <div className="md:w-1/2 z-10">
+              <h2 className="text-5xl font-bold mb-6 text-white">Conoce mejor a tu hijo</h2>
+              <p className="text-neutral-700">
                 Accede a información sobre el estado emocional de tu hijo, sus avances y necesidades. Recibe reportes
                 claros y herramientas para fortalecer su bienestar desde casa.
               </p>
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 z-0">
+        <div className="absolute -bottom-2 left-0 right-0 z-0">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full">
             <path
               fill="#ffffff"
@@ -244,9 +214,9 @@ export default function Home() {
       <section className="bg-white pt-16 pb-32 relative">
         <div className="container mx-auto px-4 text-center ">
           <h2 className="text-4xl font-bold mb-12 text-blue-500 max-w-3xl mx-auto">
-            Transformemos la forma que cuidas tu bienestar con AlmaIA 
+            Transformemos la forma que cuidas tu bienestar con AlmaIA
           </h2>
-          <div className="relative max-w-md mx-auto flex z-10 border border-black p-1 rounded-lg">
+          <div className="relative max-w-md mx-auto flex z-10 border p-1 rounded-lg">
             <Input type="text" placeholder="Nombre" className="rounded-l-lg border-r-0 " />
             <Input type="tel" placeholder="Teléfono" className="rounded-none border-l-0 border-r-0" />
             <Button className="bg-blue-500 hover:bg-blue-600 text-white rounded-r-lg rounded-l-none">
@@ -254,7 +224,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 z-0">
+        <div className="absolute -bottom-2 left-0 right-0 z-0">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full">
             <path
               fill="#a9d4fb"
@@ -266,13 +236,13 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#a9d4fb] pt-16 pb-8">
+      <footer className="bg-[#a9d4fb]">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between mb-12">
-            <div className="mb-8 md:mb-0">
-              <div className="flex items-center mb-4">
-                <div className="bg-blue-600 p-2 rounded-md mr-2">
-                  <Image src="/almie-small.svg" alt="Almie logo" width={40} height={40} />
+            <div className="mb-8 md:mb-0 mr-12">
+              <div className="flex flex-col items-center mb-4  m-16">
+                <div className="p-2 rounded-md mr-2">
+                  <Image src="/almaia-icon-app.svg" alt="Almie logo" width={105} height={105} />
                 </div>
                 <span className="text-xl font-bold text-white">AlmaIA</span>
               </div>
